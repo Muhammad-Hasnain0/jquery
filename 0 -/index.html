@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="../jquery-3.7.1.min.js"></script>
+    <title> Events</title>
+</head>
+<style>
+    .container {
+        width: 400px;
+        height: 400px;
+        background: red;
+    }
+
+    #btn {
+        margin: 20px;
+        width: 100px;
+        height: 50px;
+    }
+</style>
+
+<body>
+    <p id="pra">Lorem ipsum dolor sit amet.</p>
+    <div class="container"></div>
+    <button id="btn">click</button>
+</body>
+<script>
+    // other events dblclick,hover(2),mousenter,leave etc
+    $("#btn").click(() => {
+        $("#pra").hide()
+    })
+    var e=$("#pra").html("hello")
+    // e.html("hello")
+
+</script>
+
+</html>
